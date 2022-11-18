@@ -1,7 +1,10 @@
 import { useState } from "react";
 
+interface CounterProps {
+    initialValue?: number;
+};
 
-export const Counter = ({ initialValue = 0 }) => {
+export const Counter = ( { initialValue = 0 }: CounterProps ) => {
 
     const [ counter, setCounter ] = useState( initialValue );
 
