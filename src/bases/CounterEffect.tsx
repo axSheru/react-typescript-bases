@@ -14,7 +14,7 @@ export const CounterEffect = () => {
 
     useEffect(() => {
         
-        if ( counter < 10 ) return;
+        if ( counter < MAXIMUM_COUNT ) return;
 
         console.log( '%cSe llegó al valor máximo.', 'color: red; background-color: yellow' );
 
